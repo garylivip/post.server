@@ -43,9 +43,6 @@ router.post("/login", async (req, res) => {
   });
 });
 
-router.get("/auth", authMiddleware, (req, res) => {
-  res.status(200).json(req.user);
-});
-
+// delete lines for testing
 
 module.exports = router;
